@@ -35,11 +35,11 @@ export const AdminNews = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold text-primary mb-6">Manage News</h2>
+      <h2 className="text-2xl font-bold text-primary mb-6">Управление новостями</h2>
       
       <form onSubmit={handleSubmit} className="space-y-4 mb-8">
         <div>
-          <label className="block text-sm font-medium mb-1">Title</label>
+          <label className="block text-sm font-medium mb-1">Заголовок</label>
           <Input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -48,7 +48,7 @@ export const AdminNews = () => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Content</label>
+          <label className="block text-sm font-medium mb-1">Текст</label>
           <Textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -57,7 +57,7 @@ export const AdminNews = () => {
             rows={4}
           />
         </div>
-        <Button type="submit" className="w-full">Add News</Button>
+        <Button type="submit" className="w-full">Добавить новости</Button>
       </form>
 
       <div className="space-y-4">
@@ -81,7 +81,7 @@ export const AdminNews = () => {
                 });
               }}
             >
-              Delete
+              Удалить
             </Button>
           </div>
         ))}
